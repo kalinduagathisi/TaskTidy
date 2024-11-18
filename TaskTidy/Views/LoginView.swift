@@ -17,7 +17,12 @@ struct LoginView: View {
             VStack {
                 
                 // header
-                HeaderView()
+                HeaderView(
+                    title: "TaskTidy",
+                    subtitle: "Arrange your tasks",
+                    angle: 15,
+                    background: .pink
+                )
                 
                 // login form
                 Form {
