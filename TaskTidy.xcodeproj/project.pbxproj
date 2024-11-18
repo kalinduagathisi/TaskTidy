@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9E6A2E332CEADDD900AD8A15 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9E6A2E322CEADDD900AD8A15 /* FirebaseAuth */; };
+		9E6A2E352CEADDD900AD8A15 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9E6A2E342CEADDD900AD8A15 /* FirebaseCore */; };
+		9E6A2E372CEADDD900AD8A15 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9E6A2E362CEADDD900AD8A15 /* FirebaseFirestore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		9E54FBF82CEA34BF00ECD588 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -30,11 +36,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		9E54FBE92CEA34BB00ECD588 /* TaskTidy */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = TaskTidy;
-			sourceTree = "<group>";
-		};
 		9E54FBFA2CEA34BF00ECD588 /* TaskTidyTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = TaskTidyTests;
@@ -45,6 +46,11 @@
 			path = TaskTidyUITests;
 			sourceTree = "<group>";
 		};
+		9E6A2E4D2CEADF2F00AD8A15 /* TaskTidy */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = TaskTidy;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E6A2E352CEADDD900AD8A15 /* FirebaseCore in Frameworks */,
+				9E6A2E332CEADDD900AD8A15 /* FirebaseAuth in Frameworks */,
+				9E6A2E372CEADDD900AD8A15 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +84,7 @@
 		9E54FBDE2CEA34BB00ECD588 = {
 			isa = PBXGroup;
 			children = (
-				9E54FBE92CEA34BB00ECD588 /* TaskTidy */,
+				9E6A2E4D2CEADF2F00AD8A15 /* TaskTidy */,
 				9E54FBFA2CEA34BF00ECD588 /* TaskTidyTests */,
 				9E54FC042CEA34BF00ECD588 /* TaskTidyUITests */,
 				9E54FBE82CEA34BB00ECD588 /* Products */,
@@ -108,10 +117,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				9E54FBE92CEA34BB00ECD588 /* TaskTidy */,
+				9E6A2E4D2CEADF2F00AD8A15 /* TaskTidy */,
 			);
 			name = TaskTidy;
 			packageProductDependencies = (
+				9E6A2E322CEADDD900AD8A15 /* FirebaseAuth */,
+				9E6A2E342CEADDD900AD8A15 /* FirebaseCore */,
+				9E6A2E362CEADDD900AD8A15 /* FirebaseFirestore */,
 			);
 			productName = TaskTidy;
 			productReference = 9E54FBE72CEA34BB00ECD588 /* TaskTidy.app */;
@@ -195,6 +207,9 @@
 			);
 			mainGroup = 9E54FBDE2CEA34BB00ECD588;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9E6A2E312CEADDD900AD8A15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9E54FBE82CEA34BB00ECD588 /* Products */;
 			projectDirPath = "";
@@ -398,11 +413,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTidy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskTidy;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,11 +441,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TaskTidy/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = TaskTidy;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,6 +567,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E6A2E312CEADDD900AD8A15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E6A2E322CEADDD900AD8A15 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E6A2E312CEADDD900AD8A15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9E6A2E342CEADDD900AD8A15 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E6A2E312CEADDD900AD8A15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		9E6A2E362CEADDD900AD8A15 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E6A2E312CEADDD900AD8A15 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E54FBDF2CEA34BB00ECD588 /* Project object */;
 }
