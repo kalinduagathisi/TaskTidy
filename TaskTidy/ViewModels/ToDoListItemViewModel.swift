@@ -13,4 +13,12 @@ class ToDoListItemViewModel: ObservableObject {
     init() {
         
     }
+    
+    func deleteItem(id: String) {
+        
+    }
+    
+    func toggleIsDone(id: String) {
+        
+    }
 }
