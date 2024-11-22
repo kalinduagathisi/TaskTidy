@@ -6,17 +6,10 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 class ToDoListItemViewModel: ObservableObject {
-    @Published var showNewItemView = false
     
-    init() {
-        
-    }
-    
-    func deleteItem(id: String) {
-        
-    }
     
     func toggleIsDone(id: String) {
         
